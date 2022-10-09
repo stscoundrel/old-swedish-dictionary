@@ -9,6 +9,41 @@ Based on K.F. Söderwall's Medieval Swedish Dictionary
 `yarn add old-swedish-dictionary`
 
 
+### Usage
+
+The project provides a getter for the whole dataset. You can use it in your script to populate your own database or otherwise use the data.
+
+Should you want to use the data without this Node.js library, you might want to check [Old Swedish Dictionary Builder](https://github.com/stscoundrel/old-swedish-dictionary-builder)
+
+```javascript
+import { getDictionary } from 'old-swedish-dictionary'
+
+/**
+ * Whole dictionary as array
+ * contains over 40 000 entries.
+ */
+const dictionary = getDictionary()
+
+
+// Filter words starting with letter T
+const tWords = dictionary.filter((entry) => entry.word.charAt(0) === 't')
+
+console.log(tWords)
+
+```
+
+Individual words are returned in format of:
+
+```javascript
+{
+    headword: string,
+    partOfSpeech: string,
+    grammaticalAspect: string,
+    definitions: string[],
+    alternativeForms: string[]
+}
+```
+
 ### About "Dictionary of Old Swedish"
 
 _"Ordbok Öfver svenska medeltids-språket"_ dictionary was published in late 1884—1918 by K.F. Söderwall. Additional supplement to it was published in 1953—1973.
