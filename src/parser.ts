@@ -4,8 +4,9 @@ const KEYS_TO_ENTRY_KEYS = new Map();
 KEYS_TO_ENTRY_KEYS.set('a', 'headword');
 KEYS_TO_ENTRY_KEYS.set('b', 'partOfSpeech');
 KEYS_TO_ENTRY_KEYS.set('c', 'grammaticalAspect');
-KEYS_TO_ENTRY_KEYS.set('d', 'definitions');
-KEYS_TO_ENTRY_KEYS.set('e', 'alternativeForms');
+KEYS_TO_ENTRY_KEYS.set('d', 'information');
+KEYS_TO_ENTRY_KEYS.set('e', 'definitions');
+KEYS_TO_ENTRY_KEYS.set('f', 'alternativeForms');
 
 function parseEntry(this: any, key: string, value: unknown): unknown {
   const parsedKey = KEYS_TO_ENTRY_KEYS.get(key);
