@@ -37,8 +37,9 @@ Individual words are returned in format of:
 ```javascript
 {
     headword: string,
-    partOfSpeech: string,
+    partOfSpeech: string[],
     grammaticalAspect: string,
+    information: string,
     definitions: string[],
     alternativeForms: string[]
 }
