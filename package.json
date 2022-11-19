@@ -1,6 +1,6 @@
 {
   "name": "old-swedish-dictionary",
-  "version": "0.2.0",
+  "version": "1.0.0",
   "description": "Old Swedish Dictionary for Node.js. Based on K.F. Söderwall's Medieval Swedish Dictionary",
   "repository": "https://github.com/stscoundrel/old-swedish-dictionary.git",
   "author": "stscoundrel <silvennoinen.sampo@gmail.com>",
