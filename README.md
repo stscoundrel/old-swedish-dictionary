@@ -4,6 +4,10 @@ Old Swedish Dictionary for Node.js. The dictionary consists of 40 000+ Old Swedi
 
 Based on K.F. Söderwall's Medieval Swedish Dictionary
 
+Related projects:
+- [Old Swedish Dictionary Abbreviations](https://github.com/stscoundrel/old-swedish-dictionary-abbreviations)
+- [Old Swedish Dictionary Website](https://github.com/stscoundrel/old-swedish-dictionary-next)
+
 ### Install
 
 `yarn add old-swedish-dictionary`
