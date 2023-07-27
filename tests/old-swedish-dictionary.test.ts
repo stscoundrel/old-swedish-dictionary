@@ -27,7 +27,7 @@ describe('Old Swedish Dictionary tests', () => {
     const thval = result.filter((entry) => entry.headword === 'thval')[0];
 
     expect(aganger.headword).toBe('aganger');
-    expect(aganger.definitions[0]).toBe('åverkan, intrång, ingrepp.  " hadhe giort them ågangh vppå then siöen " SD  NS 2: 245 (1410, nyare afskr.). om aagongh pa theris gambla änger  FH 5: 109 (  1847) .  " ranzaca hwilken tere haffuer giort ogongh wppo then annars änger ok wtmark " BtFH 1: 134 ( 1506) .  ib 137 ( 1506) , 138 (1506, 153 (1506), 166 (1508, 174 (1506), 176 (1507), 178 (1507, 198 (1509), 201 (1509, 212 (1507).');
+    expect(aganger.definitions[0]).toBe('åverkan, intrång, ingrepp. " hadhe giort them ågangh vppå then siöen" SD  NS 2: 245 (1410, nyare afskr.). om aagongh pa theris gambla änger  FH 5: 109 (1847). " ranzaca hwilken tere haffuer giort ogongh wppo then annars änger ok wtmark" BtFH 1: 134 (1506).  ib 137 (1506) , 138 (1506, 153 (1506), 166 (1508, 174 (1506), 176 (1507), 178 (1507, 198 (1509), 201 (1509, 212 (1507).');
     expect(aganger.partOfSpeech).toEqual(['nn']);
     expect(aganger.grammaticalAspect).toBe('');
     expect(aganger.information).toBe('');
@@ -41,7 +41,7 @@ describe('Old Swedish Dictionary tests', () => {
     expect(aterbidhia.alternativeForms).toEqual([]);
 
     expect(thval.headword).toBe('thval');
-    expect(thval.definitions[0]).toBe('tvål, såpa.  " hon . . . sände möiana badha fran sik äptir olio oc twaal " ST 437 .  " göra saponem twaal " PM XLVI . ib XLIII. tyzdt twal  LB 7: 79.');
+    expect(thval.definitions[0]).toBe('tvål, såpa. " hon. .. sände möiana badha fran sik äptir olio oc twaal" ST 437. " göra saponem twaal" PM XLVI. ib XLIII. tyzdt twal  LB 7: 79.');
     expect(thval.partOfSpeech).toEqual(['nn']);
     expect(thval.grammaticalAspect).toBe('');
     expect(thval.information).toBe('');

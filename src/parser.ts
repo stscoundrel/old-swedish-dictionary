@@ -8,6 +8,7 @@ KEYS_TO_ENTRY_KEYS.set('d', 'information');
 KEYS_TO_ENTRY_KEYS.set('e', 'definitions');
 KEYS_TO_ENTRY_KEYS.set('f', 'alternativeForms');
 
+// eslint-disable-next-line @typescript-eslint/no-explicit-any
 function parseEntry(this: any, key: string, value: unknown): unknown {
   const parsedKey = KEYS_TO_ENTRY_KEYS.get(key);
   if (parsedKey) {
