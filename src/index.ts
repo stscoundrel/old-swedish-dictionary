@@ -3,7 +3,7 @@ import { DictionaryEntry } from './models';
 import { read } from './reader';
 import { parse } from './parser';
 
-const DICTIONARY_PATH = path.join(`${__dirname}/../resources/old-swedish-dictionary.json`);
+const DICTIONARY_PATH = path.join(`${__dirname}/../resources/old-swedish-dictionary.json.gz`);
 
 export function getDictionary() : DictionaryEntry[] {
   const content = read(DICTIONARY_PATH);
